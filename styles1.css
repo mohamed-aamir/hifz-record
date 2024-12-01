@@ -1,0 +1,117 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    /* background-color: #f4f4f4; */
+    background-image: url(https://images.pexels.com/photos/6152244/pexels-photo-6152244.jpeg);
+    background-size: cover; /* Ensure the image covers the entire screen */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent repeating */
+    background-attachment: fixed; /* Keep the image fixed when scrolling */
+    color: #333;
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: rgba(255, 255, 255, 0.8); /* White background */
+    padding: 15px 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: center; /* Center the nav links */
+    align-items: center;
+    width: 100%; /* Make the container take up full width */
+}
+
+.nav-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between; /* Space between items */
+    width: 300px; /* Set a fixed width to evenly space links */
+}
+
+.nav-links li {
+    margin: 0; /* Remove default margin */
+}
+
+.nav-links a {
+    color: #333;
+    text-decoration: none;
+    font-size: 24px;
+    font-family: "Moon Dance", cursive;
+    font-weight: 800;
+    font-style: normal;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #4CAF50; /* Change color on hover */
+}
+
+/* Mobile Styles (below 768px) */
+@media (max-width: 768px) {
+    .nav-links {
+        width: 100%; /* Ensure nav items take up the full width on smaller screens */
+        justify-content: space-evenly; /* Space items evenly */
+    }
+}
+
+
+
+.container {
+    width: 90%;
+    max-width: 800px;
+    margin: 20px auto;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    text-align: center;
+    color: #4CAF50;
+}
+
+form, #recordsList {
+    margin-top: 20px;
+}
+
+form label {
+    display: block;
+    margin-top: 10px;
+}
+
+form input {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#recordsList div {
+    background: #f9f9f9;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+}
