@@ -11,6 +11,57 @@ body {
     color: #333;
 }
 
+/* Navbar Styles */
+.navbar {
+    background-color: #ffffff; /* White background */
+    padding: 15px 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: center; /* Center the nav links */
+    align-items: center;
+    width: 100%; /* Make the container take up full width */
+}
+
+.nav-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between; /* Space between items */
+    width: 300px; /* Set a fixed width to evenly space links */
+}
+
+.nav-links li {
+    margin: 0; /* Remove default margin */
+}
+
+.nav-links a {
+    color: #333;
+    text-decoration: none;
+    font-size: 24px;
+    font-family: "Moon Dance", cursive;
+    font-weight: 800;
+    font-style: normal;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #4CAF50; /* Change color on hover */
+}
+
+/* Mobile Styles (below 768px) */
+@media (max-width: 768px) {
+    .nav-links {
+        width: 100%; /* Ensure nav items take up the full width on smaller screens */
+        justify-content: space-evenly; /* Space items evenly */
+    }
+}
+
+
+
 .container {
     width: 90%;
     max-width: 600px;
