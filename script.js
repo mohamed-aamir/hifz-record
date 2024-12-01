@@ -68,20 +68,38 @@ document.getElementById("downloadPDF").addEventListener("click", function () {
 
     // Add title to PDF
     doc.setFontSize(18);
+    doc.setFont("helvetica", "bold");
     doc.text("Hifz Records", 20, 20);
 
     // Start adding records to the PDF
     doc.setFontSize(12);
     let yPosition = 30; // Y position to start adding text
 
-    records.forEach((record, index) => {
+    records.forEach((record) => {
+        // Add Date
+        doc.setFont("helvetica", "bold");
         doc.text(`Date: ${record.date}`, 20, yPosition);
-        doc.text(`Current Lesson: ${record.currentLesson}`, 20, yPosition + 10);
-        doc.text(`Sabq Lesson: ${record.sabqLesson}`, 20, yPosition + 20);
-        doc.text(`Old Lesson: ${record.oldLesson}`, 20, yPosition + 30);
 
-        // Add some space between records
-        yPosition += 40;
+        // Add Current Lesson
+        yPosition += 10;
+        doc.setFont("helvetica", "normal");
+        doc.text(`Current Lesson: ${record.currentLesson}`, 20, yPosition);
+
+        // Add Sabq Lesson
+        yPosition += 10;
+        doc.text(`Sabq Lesson: ${record.sabqLesson}`, 20, yPosition);
+
+        // Add Old Lesson
+        yPosition += 10;
+        doc.text(`Old Lesson: ${record.oldLesson}`, 20, yPosition);
+
+        // Add a line after each record
+        yPosition += 10; // Space between text and line
+        doc.setDrawColor(0, 0, 0); // Set line color to black
+        doc.line(20, yPosition, 190, yPosition); // Draw the line
+
+        // Add space after the line for separation
+        yPosition += 10;
 
         // If the content goes beyond the page, add a new page
         if (yPosition > 270) {
