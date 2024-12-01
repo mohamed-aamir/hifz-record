@@ -62,6 +62,10 @@ document.getElementById("downloadPDF").addEventListener("click", function () {
         return;
     }
 
+    // Get current date
+    const today = new Date();
+    const dateString = today.toLocaleDateString('en-GB'); // 'en-GB' for dd-mm-yyyy format
+
     // Add title to PDF
     doc.setFontSize(18);
     doc.text("Hifz Records", 20, 20);
@@ -86,6 +90,6 @@ document.getElementById("downloadPDF").addEventListener("click", function () {
         }
     });
 
-    // Save the PDF
-    doc.save("hifz-records.pdf");
+    // Save the PDF with the date in the filename
+    doc.save(`hifz_record_${dateString}.pdf`);
 });
