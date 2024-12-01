@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hifz Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Hifz Tracker</h1>
+            <p id="date"></p>
+        </header>
+        <main>
+            <form id="hifzForm">
+                <label for="currentLesson">Current Lesson:</label>
+                <input type="text" id="currentLesson" placeholder="Enter Current Lesson" required>
+
+                <label for="sabqLesson">Sabq Lesson:</label>
+                <input type="text" id="sabqLesson" placeholder="Enter Sabq Lesson" required>
+
+                <label for="oldLesson">Old Lesson:</label>
+                <input type="text" id="oldLesson" placeholder="Enter Old Lesson" required>
+
+                <button type="submit">Save Record</button>
+            </form>
+            <button id="viewRecords">View All Records</button>
+            <div id="recordsList"></div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
