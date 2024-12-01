@@ -2,7 +2,12 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    /* background-color: #f4f4f4; */
+    background-image: url(https://images.pexels.com/photos/6152244/pexels-photo-6152244.jpeg);
+    background-size: cover; /* Ensure the image covers the entire screen */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent repeating */
+    background-attachment: fixed; /* Keep the image fixed when scrolling */
     color: #333;
 }
 
@@ -10,7 +15,7 @@ body {
     width: 90%;
     max-width: 600px;
     margin: 20px auto;
-    background: #fff;
+    background: rgba(255, 255, 255, 0.8);
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
