@@ -1,6 +1,6 @@
 {
-  "name": "Tracker PWA",
-  "short_name": "Tracker",
+  "name": "Hifz Record",
+  "short_name": "Hifz Record",
   "start_url": "/index.html",
   "display": "standalone",
   "background_color": "#ffffff",
