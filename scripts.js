@@ -123,3 +123,9 @@
         // Save the PDF with the date in the filename
         doc.save(`hifz_record_${dateString}.pdf`);
     });
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('/sw.js')
+    .then(() => console.log('Service Worker registered!'))
+    .catch((error) => console.error('Service Worker registration failed:', error));
+}
+
