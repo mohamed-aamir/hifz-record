@@ -1,7 +1,7 @@
 {
   "name": "Hifz Record",
   "short_name": "Hifz Record",
-  "start_url": "/index.html",
+  "start_url": "/hifz-record",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#6200ea",
